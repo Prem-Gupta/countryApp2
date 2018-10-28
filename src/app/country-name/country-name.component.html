@@ -1,0 +1,40 @@
+
+  <div class="row countryName" style="text-align: center">
+    <div class="col-md-12">
+        <form #searchForm="ngForm" autocomplete="off">
+            <div>
+                <input  type="text" name="countryNameDescription" (input) = "showSuggesstion()"
+                 [(ngModel)]="countryNameDescription" #title="ngModel" class="form-control formSize"
+                    placeholder="Search Country By Name........" required>
+
+                    <!-- <div *ngIf="suggestionArray.length>0">
+                            <ul  class="myUL"  *ngFor="let items of suggestionArray">
+                                    <li (click)="selectValue(items)" >
+                                            <a>{{items}}</a>
+                                    </li>
+                            </ul>
+
+                    </div> -->
+
+
+                      <div class="row" style="padding-top:5%">
+                            <table class="table" *ngIf="suggestionArray.length>0">
+                                    <thead class="thead-dark">
+                                      <tr>
+                                         <th >Country</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                     <tr *ngFor="let items of suggestionArray">
+                                        <td>{{items}}</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>   
+                      </div>
+            </div>
+
+        </form>
+    </div>
+    <!-- <div class="col-md-2">
+        <button type="submit" class="btn btn-primary btn-lg" >Search</button>
+    </div> -->

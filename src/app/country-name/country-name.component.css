@@ -1,0 +1,30 @@
+.countryName{
+    margin: 5% 0% 5% 0;
+}
+.formSize {
+    padding: 20px;
+    font-size: 17px;
+    border: 2px solid #333;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+  }
+
+
+  .myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    cursor: pointer;
+  }
